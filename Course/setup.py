@@ -1,19 +1,17 @@
-#!/usr/bin/python3
-
 from setuptools import setup, find_packages
 
 setup(
-    name='NAME', # Название вашей программы
-    version='0.0.1', # Версия вашей программы.
+    name='main',
+    version='0.0.1',
     packages=find_packages("."),
-    scripts=["bin/NAME"], # Расположение главного исполняемого файла.
-    url='https://github.com/...', # Адрес репозитория с вашей курсовой работой.
+    scripts=["bin/main"],
+    url='https://github.com/whydejection/python-labs-homeworkLysenko/tree/main/Course',
     license='Apache-2.0',
-    author='...', # ФИО автора.
-    author_email='...', # Электронная почта автора.
-    description='...', # Описание вашей поделки. Что она может, для чего сделана.
+    author='Lysenko Gleb Vladimirovich',
+    author_email='lysenko.gv@edu.spbstu.ru',
+    description='Пакет на Python для работы c валютами',
     include_package_data=True,
     install_requires=[
-      # Список зависимостей если есть.
-      ],
+        'tabulate>=0.8.9',
+    ],
 )
